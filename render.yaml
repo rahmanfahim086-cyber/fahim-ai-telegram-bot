@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: fahim-ai-telegram-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn server:app --workers 1 --threads 4 --timeout 120
+    healthCheckPath: /
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
