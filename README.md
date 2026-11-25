@@ -121,14 +121,12 @@ FAHIM_AI_Telegram_Bot/
 
 ---
 
-## ৫. ZIP ডাউনলোড, Extract এবং GitHub-এ আপলোড (Android ফোন থেকে)
+## ৫. Google AI Studio থেকে GitHub-এ আপলোড (Android ফোন থেকে)
 
-1. প্রদত্ত `FAHIM_AI_Telegram_Bot.zip` ফাইলটি ডাউনলোড করুন।
-2. আপনার ফোনের File Manager বা ZArchiver অ্যাপ দিয়ে ZIP-টি Extract করুন।
-3. নিশ্চিত করুন Extract করার পর ভেতরে `FAHIM_AI_Telegram_Bot/` ফোল্ডারের সরাসরি নিচে `bot.py`, `server.py`, `requirements.txt`, `utils/`, `handlers/` ফাইলগুলো আছে।
-4. [GitHub](https://github.com)-এ লগইন করে **New Repository** তৈরি করুন (যেমন: `fahim-ai-telegram-bot`)।
-5. রিপোজিটরিতে **Add file → Upload files** ব্যবহার করে `FAHIM_AI_Telegram_Bot/` ফোল্ডারের ভেতরের সব ফাইল ও ফোল্ডার (`bot.py`, `server.py`, `utils/`, `handlers/`, ইত্যাদি) আপলোড করে **Commit changes** দিন।
-   - লক্ষ্য রাখবেন: `.env` ফাইল কখনোই আপলোড করবেন না।
+1. Google AI Studio ওয়ার্কস্পেসের উপরের **GitHub / Push to GitHub** বাটন ব্যবহার করে সরাসরি আপনার GitHub রিপোজিটরিতে (`fahim-ai-telegram-bot`) ফাইলগুলো Sync/Push করুন।
+2. বিকল্প হিসেবে ম্যানুয়ালি আপলোড করতে চাইলে [GitHub](https://github.com)-এ নতুন রিপোজিটরি তৈরি করে **Add file → Upload files** দিয়ে প্রজেক্টের মূল ফোল্ডারের সব ফাইল (`bot.py`, `server.py`, `requirements.txt`, `render.yaml`, `Procfile`, `runtime.txt`, `.env.example`, `.gitignore`, `README.md`, `utils/`, `handlers/`) রিপোজিটরির রুটে আপলোড করে **Commit changes** দিন।
+   - লক্ষ্য রাখবেন: `.env` ফাইল বা `BOT_TOKEN` কখনোই GitHub-এ আপলোড করবেন না।
+   - নিশ্চিত করুন `utils/` ও `handlers/` ফোল্ডারের ভেতরে `__init__.py` এবং সব মডিউল সঠিকভাবে আছে।
 
 ---
 
